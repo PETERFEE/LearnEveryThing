@@ -1,0 +1,21 @@
+name: Validate Skill and Resource Catalogue
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Validate resource data and skill metadata
+        run: python scripts/validate_catalog.py
+      - name: Run tests
+        run: python -m unittest discover -s tests -v
+      - name: Generate example roadmap
+        run: python scripts/roadmap.py --profile assets/learner_profile.example.json --top 12 --output /tmp/example-roadmap.md

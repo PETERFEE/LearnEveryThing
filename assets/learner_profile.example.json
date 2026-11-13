@@ -1,0 +1,31 @@
+{
+  "profile_name": "Example learner (fictional)",
+  "target_roles": [
+    "embedded-firmware",
+    "ros2-robotics"
+  ],
+  "experience_level": "intermediate",
+  "known_skills": [
+    "c",
+    "cpp",
+    "stm32",
+    "protocols"
+  ],
+  "learning_gaps": [
+    "rtos",
+    "linux",
+    "ros2",
+    "testing",
+    "safety"
+  ],
+  "available_hardware": [
+    "generic-arm-cortex-m-board",
+    "linux-pc"
+  ],
+  "hours_per_week": 8,
+  "weeks": 12,
+  "budget": "free-first",
+  "preferred_language": "English",
+  "learning_style": "project-based",
+  "notes": "Illustrative only. Replace with the current learner\u2019s actual goals and evidence."
+}
